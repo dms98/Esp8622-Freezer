@@ -168,8 +168,8 @@ function sendMail(msg)
  
   conn=net.createConnection(net.TCP, 0) 
   conn:on("receive", function(conn, payload) print(payload) end)
-  -- sebrae.esy.es/Dmail.php
-  conn:connect(80,'31.220.16.221') -- 31.220.16.229
+  -- site.algum.com/Dmail.php
+  conn:connect(80,'10.20.30.40') -- 
   conn:send(urlGET) 
   conn:send("Host: sebrae.esy.es\r\n") 
   conn:send("Accept: */*\r\n") 
