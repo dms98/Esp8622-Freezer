@@ -66,7 +66,7 @@ if ($par_envia="SIM") {
 
 
 if ($par_go=="") {
-	//header("Location: http://www.mp.go.gov.br");
+	//header("Location: http://www.site.com");
 	echo 'par_par: ' . $par_par . '<br>';
 	echo 'get-par: ' . $_GET["par"] . '<br>';
 	echo 'par_go: ' . $par_go . '<br>';
