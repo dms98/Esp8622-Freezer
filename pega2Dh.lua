@@ -158,7 +158,7 @@ end
 
 function sendMail(msg)
  
-  --http://sebrae.esy.es/Dmail.php?message=teste&envia=nao&par_op=altaTemperatura
+  --http://site.com.es/Dmail.php?message=teste&envia=nao&par_op=altaTemperatura
   
   logD("Sending e-mail to d-Mail")
   --msg="msg - TEste"
@@ -171,7 +171,7 @@ function sendMail(msg)
   -- site.algum.com/Dmail.php
   conn:connect(80,'10.20.30.40') -- 
   conn:send(urlGET) 
-  conn:send("Host: sebrae.esy.es\r\n") 
+  conn:send("Host: site.com.es\r\n") 
   conn:send("Accept: */*\r\n") 
   conn:send("User-Agent: Mozilla/4.0 (compatible; esp8266 Lua; Windows NT 5.1)\r\n")
   conn:send("\r\n")
